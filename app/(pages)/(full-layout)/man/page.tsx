@@ -19,16 +19,6 @@ const Main:React.FC = () => {
 
     const { data:posts } = useGetManPostsQuery( {} )
 
-    /**
-     *  브라우저 창에 Title 세팅
-     */
-    React.useEffect(() => {
-        const htmlTitle = document.querySelector('title')
-        htmlTitle.innerHTML = 'Next Starter Kit'
-        
-        setDataTable()
-    }, []);
-
     const setDataTable = () => {
         const dataTables = Array.from(document.getElementsByClassName('p-datatable-table'))
 
