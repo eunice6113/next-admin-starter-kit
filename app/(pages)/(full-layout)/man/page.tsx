@@ -24,7 +24,7 @@ const Main:React.FC = () => {
      */
     React.useEffect(() => {
         const htmlTitle = document.querySelector('title')
-        htmlTitle.innerHTML = '클라우드 포탈 관리자'
+        htmlTitle.innerHTML = 'Next Starter Kit'
         
         setDataTable()
     }, []);
