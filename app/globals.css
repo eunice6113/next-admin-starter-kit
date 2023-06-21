@@ -1,6 +1,17 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
+
+/* css 는 불러오는 순서를 지켜주셔야 합니다!! */
+@import 'primereact/resources/themes/saga-blue/theme.css';
+@import "primereact/resources/primereact.min.css";
+@import 'primeicons/primeicons.css';
+
+@import '../assets/css/global/font.css';
+@import '../assets/css/global/custom.css';
+@import '../assets/css/global/App.css';
+
+
 
 :root {
   --foreground-rgb: 0, 0, 0;
