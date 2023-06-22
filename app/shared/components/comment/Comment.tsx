@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { InputTextarea } from 'primereact/inputtextarea';
 import { Button } from 'primereact/button';
-import { IComment } from '@/redux/models/i-comment';
+import { IComment } from '@/app/redux/models/i-comment';
 import './comment.css';
 
 //댓글 상세/수정

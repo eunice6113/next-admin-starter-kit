@@ -16,8 +16,8 @@ import ViewTemplate from '@/app/shared/components/template/ViewTemplate';
 import useBasePage from '@/app/shared/hooks/base-page.hook';
 import { CommonUtils } from '@/app/shared/utils/commonUtils';
 import TextEditor from '@/app/shared/components/text-editor/TextEditor';
-import { Post } from '@/redux/models/ntc'
-import { useGetNtcPostByIdQuery , useUpdateNtcPostMutation, useDeleteNtcPostMutation} from '@/redux/services/ntc.service';
+import { Post } from '@/app/redux/models/ntc'
+import { useGetNtcPostByIdQuery , useUpdateNtcPostMutation, useDeleteNtcPostMutation} from '@/app/redux/services/ntc.service';
 import { useGetCodeList } from '@/app/shared/hooks/get-code.hook';
 import downFile from '@/app/shared/utils/fileDownload';
 import CldFileUpload from '@/app/shared/components/CldFileUpload';

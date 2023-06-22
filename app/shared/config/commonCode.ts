@@ -1,6 +1,10 @@
 /* Common CODE */
 
-/* admin, user 동기화 필수!! */
+export const EMPID: string = 'empid';
+export const USER: string = 'user';
+export const TOKEN_NAME = 'access_token';
+export const REFRESH_TOKEN = 'refresh_token';
+export const SEARCH_PARAMS: any = 'search_params';
 
 export const METHOD = {
     GET : 'GET',
@@ -44,17 +48,6 @@ export const BLBR_TCD = [
     { value: '3001', name: '질문' },
     { value: '3002', name: '답변' },
 ]
-
-//파일 호출URL
-export const NEXT_PUBLIC_API_URL = process.env.NEXT_PUBLIC_API_URL
-export const FILE_UPLOAD_URL = process.env.NEXT_PUBLIC_FILE_UPLOAD_URL
-export const FILE_DOWNLOAD_URL = process.env.NEXT_PUBLIC_FILE_DOWNLOAD_URL
-export const FILE_ALL_DOWNLOAD_URL = process.env.NEXT_PUBLIC_FILE_ALL_DOWNLOAD_URL
-
-//경로 
-export const NEXT_PUBLIC_USER_URL = process.env.NEXT_PUBLIC_USER_URL
-export const NEXT_PUBLIC_SURVEY_URL = process.env.NEXT_PUBLIC_SURVEY_URL
-
 
 //게시판구분코드	BLBR_DCD
 export const BLBR_DCD_NTC = '10'   //공지사항

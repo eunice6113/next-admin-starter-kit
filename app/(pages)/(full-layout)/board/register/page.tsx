@@ -16,8 +16,8 @@ import { CommonUtils } from '@/app/shared/utils/commonUtils';
 import { useGetCodeList } from '@/app/shared/hooks/get-code.hook';
 import { useFormik } from "formik";
 import * as Yup from 'yup';
-import {useAddNtcPostMutation , } from '@/redux/services/ntc.service';
-import {useDeleteAtchMutation , } from '@/redux/services/atch.service';
+import {useAddNtcPostMutation , } from '@/app/redux/services/ntc.service';
+import {useDeleteAtchMutation , } from '@/app/redux/services/atch.service';
 import CldFileUpload from '@/app/shared/components/CldFileUpload';
 import TextEditor from '@/app/shared/components/text-editor/TextEditor';
 

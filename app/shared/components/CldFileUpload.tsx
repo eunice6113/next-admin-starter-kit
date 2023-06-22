@@ -1,11 +1,11 @@
-
+"use client"
 
 import * as React from 'react';
 import { FileUpload } from 'primereact/fileupload';
 import { Button } from 'primereact/button';
 import { Tag } from 'primereact/tag';
 import { CommonUtils } from '../utils/commonUtils';
-import { getEmpId, getToken, ssoLogin,} from '@/redux/services/base/base-api.service';
+import { getEmpId, getToken, ssoLogin,} from '@/app/redux/services/base/base-api.service';
 import { confirmDialog, } from 'primereact/confirmdialog';
 
 interface FileUploadProps {

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { getIsAdmin, hasValidToken } from "@/redux/services/base/base-api.service";
+import { getIsAdmin, hasValidToken } from "@/app/redux/services/base/base-api.service";
 import NotAdminMotion from "@/app/shared/components/motion/NotAdminMotion";
 import useBasePage from "@/app/shared/hooks/base-page.hook";
 

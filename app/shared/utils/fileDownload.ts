@@ -1,10 +1,11 @@
 import * as commonCode from '../config/commonCode';
+import { environment } from '../config/environment';
 import { getHeaders } from './fileDownloadHeader';
 
-const downloadFile = (condition) => {
+const downloadFile = (condition:string) => {
   console.log('condition', condition)
 
-  const url=commonCode.FILE_DOWNLOAD_URL;
+  const url= environment.file.download;
   
   fetch(url,{
       method : 'POST',
@@ -21,7 +22,7 @@ const downloadFile = (condition) => {
     }
 
   })
-  .then((blob) =>{
+  .then((blob:any) =>{
     const url = window.URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;

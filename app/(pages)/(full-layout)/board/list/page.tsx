@@ -12,11 +12,11 @@ import { Button } from 'primereact/button';
 import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
 import { paginator } from '@/app/shared/utils/table-paginator';
-import { useGetNtcPostsQuery } from '@/redux/services/ntc.service'
-import { NtcSearchParam } from '@/redux/models/ntc'
+import { useGetNtcPostsQuery } from '@/app/redux/services/ntc.service'
+import { NtcSearchParam } from '@/app/redux/models/ntc'
 import { useGetCodeList } from '@/app/shared/hooks/get-code.hook';
-import { useAppSelector,useAppDispatch } from '@/redux/hooks';
-import { storeSearchParam } from '@/redux/slices/history.slice';
+import { useAppSelector,useAppDispatch } from '@/app/redux/hooks';
+import { storeSearchParam } from '@/app/redux/slices/history.slice';
 import { CommonUtils } from '@/app/shared/utils/commonUtils';
 import '@/assets/css/pages/board-list.css';
 

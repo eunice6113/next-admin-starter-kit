@@ -1,10 +1,12 @@
+"use client"
+
 import { createApi, fetchBaseQuery, retry } from '@reduxjs/toolkit/query/react'
 import type {
     BaseQueryFn,
     FetchArgs,
     FetchBaseQueryError,
 } from '@reduxjs/toolkit/query'
-import { confirmDialog } from 'primereact'
+import { confirmDialog } from 'primereact/confirmdialog'
 import { getEmpId, getToken, ssoLogin } from './base-api.service'
 
 let base_api = process.env.NEXT_PUBLIC_API_URL 
@@ -45,7 +47,9 @@ const baseQueryWithReauth: BaseQueryFn<
         //==> 세션 만료시 logout 페이지를 보여줌 
         if (code === 'AUE00001') {
 
-            localStorage.clear()
+            if (typeof window !== 'undefined') {
+                localStorage.clear()
+            }
 
             confirmDialog({
                 header: code, 
@@ -59,8 +63,9 @@ const baseQueryWithReauth: BaseQueryFn<
         }
         //인증 토큰이 없을 때 SSO Logout 처리한다
         else if (code.slice(0,3) === 'AUE') {
-
-            localStorage.clear()
+            if (typeof window !== 'undefined') {
+                localStorage.clear()
+            }
 
             confirmDialog({
                 header: code, 

@@ -15,7 +15,24 @@ const LNB: React.FC<IProps> = ({open}) => {
 
     const items = [
         {
-            label:'Board',
+            label:'SSR Post',
+            visible: true,
+            expanded: true,
+            items:[
+                {
+                    label:'Post List',
+                    url: '/ssr-post/list',
+                    className: getClsName('/ssr-post/list')
+                },
+                {
+                    label:'Post Detail',
+                    url: '/ssr-post/detail/1',
+                    className: getClsName('/ssr-post/detail')
+                },
+            ]
+        },
+        {
+            label:'CSR Board',
             visible: true,
             expanded: true,
             items:[

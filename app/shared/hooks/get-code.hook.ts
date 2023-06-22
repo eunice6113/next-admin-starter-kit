@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import {  useInqCodeDetailListMutation } from '@/redux/services/code.service'
+import {  useInqCodeDetailListMutation } from '@/app/redux/services/code.service'
   
   export function useGetCodeList( code ) {
 

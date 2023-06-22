@@ -1,8 +1,5 @@
 import './globals.css'
-import { Providers } from '@/redux/provider'
-
-import { ConfirmDialog } from 'primereact/confirmdialog';
-import { Toast } from 'primereact/toast';
+import { Providers } from '@/app/redux/provider'
 
 export const metadata = {
   title: 'Next Starter Kit',

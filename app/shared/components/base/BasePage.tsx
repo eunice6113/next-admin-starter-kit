@@ -28,6 +28,8 @@ export const BasePage: React.FC<IProps> = ({className, children}) => {
         /**
          *  메뉴 타이틀 세팅
          */
+
+        /*
         let menu:any = JSON.parse(localStorage.getItem('menu'));
         let nowSubPath = `/${curLocation[1]}/${curLocation[2]}`
 
@@ -38,7 +40,7 @@ export const BasePage: React.FC<IProps> = ({className, children}) => {
             if(menuUrl === nowSubPath) {
                 setPageTitle(menuNm);
             }
-        })
+        })*/
 
     }, [])
 

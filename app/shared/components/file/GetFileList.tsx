@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useGetAtchPostsQuery } from '@/redux/services/atch.service';
+import { useGetAtchPostsQuery } from '@/app/redux/services/atch.service';
 import downFile from '../../utils/fileDownload';
 
 interface IProps {

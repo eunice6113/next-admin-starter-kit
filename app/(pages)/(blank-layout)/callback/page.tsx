@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { useLoginMutation } from '@/redux/services/base/auth.service';
-import { getEmpId, setEmpId, setToken, setUserInfo } from '@/redux/services/base/base-api.service';
+import { useLoginMutation } from '@/app/redux/services/base/auth.service';
+import { getEmpId, setEmpId, setToken, setUserInfo } from '@/app/redux/services/base/base-api.service';
 import useBasePage from '@/app/shared/hooks/base-page.hook';
 
 const Callback:React.FC = () => {

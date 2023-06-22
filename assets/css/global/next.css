@@ -1,0 +1,20 @@
+/*
+next 로 바꾸면서 추가하는 공통 CSS
+*/
+
+.page {
+    padding:20px;
+    background-color:#eee;
+}
+
+.postCard {
+    margin-bottom:20px;
+}
+
+.canHover {
+    cursor:pointer;
+}
+
+.canHover:hover {
+    background-color: pink;
+}

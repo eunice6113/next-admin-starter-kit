@@ -2,7 +2,7 @@
 
 import * as React from 'react';
 import moment from 'moment';
-import { useGetManPostsQuery } from '@/redux/services/man.service';
+import { useGetManPostsQuery } from '@/app/redux/services/man.service';
 import { BasePage } from '@/app/shared/components/base/BasePage';
 import NoData from '@/app/shared/components/ui/NoData';
 import '@/assets/css/pages/main.css';

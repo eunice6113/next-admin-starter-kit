@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { User } from '@/redux/models/user';
-import { authApi } from '@/redux/services/base/auth.service';
-import { getToken, getUserInfo, setUserInfo, ssoLogin, ssoLogout } from '@/redux/services/base/base-api.service';
+import { User } from '@/app/redux/models/user';
+import { authApi } from '@/app/redux/services/base/auth.service';
+import { getToken, getUserInfo, setUserInfo, ssoLogin, ssoLogout } from '@/app/redux/services/base/base-api.service';
 import { RootState } from '../../store';
 
 interface Auth {

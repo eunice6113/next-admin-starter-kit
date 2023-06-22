@@ -15,7 +15,7 @@ import useBasePage from '@/app/shared/hooks/base-page.hook';
 import { Column } from 'primereact/column';
 import { noticeDummyData } from '@/app/shared/demo/data/noticeDummyData';
 import { paginator } from '@/app/shared/utils/table-paginator';
-import { SearchParams } from '@/redux/models/search-params';
+import { SearchParams } from '@/app/redux/models/search-params';
 
 const TableListGuide: React.FC = () => {
 

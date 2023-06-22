@@ -1,4 +1,4 @@
-import { getEmpId, getToken } from "@/redux/services/base/base-api.service";
+import { getEmpId, getToken } from "@/app/redux/services/base/base-api.service";
 
 const getHeaders = () => {
     

@@ -1,6 +1,6 @@
 import { Button } from 'primereact/button';
 import * as React from 'react';
-import { useDeleteAtchMutation } from '@/redux/services/atch.service';
+import { useDeleteAtchMutation } from '@/app/redux/services/atch.service';
 import CldFileUpload from '../CldFileUpload';
 
 interface IProps {

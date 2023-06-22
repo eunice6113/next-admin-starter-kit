@@ -4,7 +4,7 @@ import { Button } from 'primereact/button';
 import * as React from 'react';
 import Link from 'next/link';
 import logo from '@/assets/images/cloud.png';
-import { getToken, getUserInfo } from '@/redux/services/base/base-api.service';
+import { getToken, getUserInfo } from '@/app/redux/services/base/base-api.service';
 import './header.css';
 
 interface IProps {
@@ -26,7 +26,7 @@ const Header: React.FC<IProps> = ({prefix, handleOpen}) => {
     let userAccessInfo = `최근 접속 ${lgnDt}  ${lgnTs}`;
 
     const logoutFunc = () => {
-        localStorage.clear();
+        // localStorage.clear();
         // window.location.href = process.env.NEXT_PUBLIC_SSO_LOGOUT; 
         window.open(process.env.NEXT_PUBLIC_SSO_LOGOUT, '_self');
     }

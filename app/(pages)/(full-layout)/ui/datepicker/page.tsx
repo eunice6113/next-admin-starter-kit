@@ -2,7 +2,7 @@
 
 import * as React from 'react';
 import { Calendar } from 'primereact/calendar';
-import { SearchParams } from '@/redux/models/search-params';
+import { SearchParams } from '@/app/redux/models/search-params';
 import { BasePage } from '@/app/shared/components/base/BasePage';
 import ClipboardCopy from '@/app/shared/components/clipboard-copy/ClipboardCopy';
 
