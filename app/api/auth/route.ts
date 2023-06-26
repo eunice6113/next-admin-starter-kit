@@ -64,13 +64,13 @@ const ssoLogin = () => {
   sessionStorage.clear();
 
   const LOGOUT_URL = window.location.protocol + '//' + window.location.host + '/auth/logout'
-  window.location.href = LOGOUT_URL;
+  // window.location.href = LOGOUT_URL;
 }
 
 const ssoLogout = () => {
   removeToken();
   sessionStorage.clear();
-  window.location.href = `${environment.sso.logout}`;
+  // window.location.href = `${environment.sso.logout}`;
 }
 
 const hasValidToken = () => {

@@ -10,9 +10,8 @@ interface IProps {
 
 export const BasePage: React.FC<IProps> = ({className, children}) => {
 
-    const { curLocation } = useBasePage()
+    const { location } = useBasePage()
 
-    // const  location = useLocation();
     const [pageTitle, setPageTitle] = React.useState('')
     
     React.useEffect(() => {
@@ -80,11 +79,13 @@ export const BasePage: React.FC<IProps> = ({className, children}) => {
     //새로운 곳으로 이동시 페이지 상단으로 스크롤 이동
     React.useEffect(() => {
         window.scrollTo(0, 0);
-    }, [location.pathname]);
+
+        console.log('location', location)
+    }, [location]);
     
     return(<>
         {
-            location.pathname !== '/man' && <PageTitle title={pageTitle} />
+            location !== '/man' && <PageTitle title={pageTitle} />
         }
         
         <div className={`pl20 pr20 basePage ${className}`}>
