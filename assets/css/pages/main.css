@@ -16,6 +16,12 @@ body.theme-light .main {
     height: 300px !important;
 }
 
+.fbox {
+    width: 200px;
+    height: 200px;
+    background: red;
+}
+
 .main {
     background-color: #f4f4f4;
     height: 100%;

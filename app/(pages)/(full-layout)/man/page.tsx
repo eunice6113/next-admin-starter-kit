@@ -8,6 +8,8 @@ import NoData from '@/app/shared/components/ui/NoData';
 import '@/assets/css/pages/main.css';
 import AboutMainVisual from '@/app/shared/components/lottie/about/AboutMainVisual';
 import About01 from '@/app/shared/components/lottie/about/About01';
+import { motion } from "framer-motion"
+import Spline from '@splinetool/react-spline';
 
 // 메인화면
 const Main:React.FC = () => {
@@ -145,6 +147,26 @@ const Main:React.FC = () => {
             <AboutMainVisual />
             <About01 />
         </div>
+
+        <motion.div
+            className="fbox"
+            animate={{
+                scale: [1, 2, 2, 1, 1],
+                rotate: [0, 0, 180, 180, 0],
+                borderRadius: ["0%", "0%", "50%", "50%", "0%"]
+            }}
+            transition={{
+                duration: 2,
+                ease: "easeInOut",
+                times: [0, 0.2, 0.5, 0.8, 1],
+                repeat: Infinity,
+                repeatDelay: 1
+            }}
+        />
+
+        <div>
+            <Spline scene="https://prod.spline.design/6Wq1Q7YGyM-iab9i/scene.splinecode" />
+        </div>  
 
         <div className='cld-row pt30'>
             <div className='cld-col-3'>
