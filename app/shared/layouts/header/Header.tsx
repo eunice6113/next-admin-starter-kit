@@ -37,7 +37,7 @@ const Header: React.FC<IProps> = ({prefix, handleOpen}) => {
             <Button className='menu p-button-text' icon='pi pi-bars' onClick={handleOpen} />
 
             <Link href='/' className='logoTitle'>
-                <span className='portalName'>{prefix} Next.js CMS Starter Kit</span>
+                <span className='portalName'>{prefix} Next.js CMS Starter Kit v2</span>
             </Link>
   
             {

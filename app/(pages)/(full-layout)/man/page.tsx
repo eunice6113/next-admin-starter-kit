@@ -6,6 +6,8 @@ import { useGetManPostsQuery } from '@/app/redux/services/man.service';
 import { BasePage } from '@/app/shared/components/base/BasePage';
 import NoData from '@/app/shared/components/ui/NoData';
 import '@/assets/css/pages/main.css';
+import AboutMainVisual from '@/app/shared/components/lottie/about/AboutMainVisual';
+import About01 from '@/app/shared/components/lottie/about/About01';
 
 // 메인화면
 const Main:React.FC = () => {
@@ -138,6 +140,12 @@ const Main:React.FC = () => {
 
     return(
     <BasePage className='main'>
+
+        <div className="mainVisual">
+            <AboutMainVisual />
+            <About01 />
+        </div>
+
         <div className='cld-row pt30'>
             <div className='cld-col-3'>
                 <div className='card dataCard'>

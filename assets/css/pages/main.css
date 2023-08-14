@@ -7,6 +7,15 @@ body.theme-light .main {
     height: 100%;
 }
 
+.mainVisual {
+    display: flex;
+    width: 100%;
+}
+.mainVisual canvas {
+    width: 100%;
+    height: 300px !important;
+}
+
 .main {
     background-color: #f4f4f4;
     height: 100%;
